@@ -69,7 +69,7 @@ export default function News (props) {
     return (
     <> 
     <div className="container my-5">
-        <h2 className="text-center">NewsMonkey -Top {capitalizeFirstLetter(props.category)} Headlines</h2>
+        <h2 className="text-center " style={{marginTop:'90px'}} >NewsMonkey -Top {capitalizeFirstLetter(props.category)} Headlines</h2>
         { loading && <Spinner /> } 
         <InfiniteScroll
         dataLength={articles.length}
