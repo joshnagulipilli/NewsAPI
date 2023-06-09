@@ -1,23 +1,12 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React  from 'react'
+
 // import {
 //   BrowserRouter as
 //   Link,
 // } from "react-router-dom";
 
-export class Navbar extends Component {
-     static defaultProps ={
-           country : 'in',
-           pagesize : 5,
-           category :'general'
-     }
-     static propsType ={
-          country : PropTypes.string ,
-          pagesize :PropTypes.number,
-          category :PropTypes.string
-     }
+export default  function Navbar (props) {
 
-  render() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
@@ -30,7 +19,6 @@ export class Navbar extends Component {
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/">Home</a>
               </li>
-              <li className="nav-item"><a className="nav-link" href="/link">link</a></li>
               <li className="nav-item"><a className="nav-link" href="/business">business</a></li>
               <li className="nav-item"><a className="nav-link" href="/entertainment">entertainment</a></li>
               <li className="nav-item"><a className="nav-link" href="/general">general</a></li>
@@ -45,7 +33,7 @@ export class Navbar extends Component {
         </div>
       </nav>
     )
-  }
+  
 }
 
-export default Navbar
+
